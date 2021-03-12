@@ -1,7 +1,7 @@
-From c939d644849ed904e2bd7ccf65b62be8c2ba9681 Mon Sep 17 00:00:00 2001
+From 0e309d9321a1806e6fedbe0caa76f0236ff7cdfb Mon Sep 17 00:00:00 2001
 From: Guilhem Saurel <guilhem.saurel@laas.fr>
 Date: Fri, 12 Mar 2021 15:06:36 +0100
-Subject: [PATCH] [CMake] remove BUILD_TESTING conditions
+Subject: [PATCH] remove BUILD_TESTING conditions
 
 ---
  CMakeLists.txt | 8 --------
