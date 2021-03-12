@@ -5,9 +5,10 @@
 import unittest
 
 import numpy as np
-import pinocchio
 from dynamic_graph.sot.dynamic_pinocchio import DynamicPinocchio
 from dynamic_graph.sot.dynamic_pinocchio.humanoid_robot import AbstractHumanoidRobot
+
+from example_robot_data import load_full
 
 
 class Robot(AbstractHumanoidRobot):
@@ -27,12 +28,9 @@ class Robot(AbstractHumanoidRobot):
 
 class HumanoidRobotTest(unittest.TestCase):
     def setUp(self):
-        import os
-        dir_path = os.path.dirname(os.path.realpath(__file__))
-        from example_robot_data.path import EXAMPLE_ROBOT_DATA_MODEL_DIR
-        self.urdf_file_name=EXAMPLE_ROBOT_DATA_MODEL_DIR+\
-           '/talos_data/robots/talos_reduced.urdf'
         self.name = "talos"
+        _, _, urdf, _ = load_full(self.name)
+        self.urdf_file_name = urdf
 
     def test_non_instanciable_robot(self):
         class NonInstanciableRobot(AbstractHumanoidRobot):
