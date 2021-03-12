@@ -96,7 +96,7 @@ tracks:
     last_version: 3.6.2
     name: sot-dynamic-pinocchio
     patches: null
-    release_inc: '1'
+    release_inc: '2'
     release_repo_url: https://github.com/stack-of-tasks/sot-dynamic-pinocchio-ros-release.git
     release_tag: v:{version}
     ros_distro: noetic
