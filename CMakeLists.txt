@@ -38,11 +38,6 @@ endif(BUILD_PYTHON_INTERFACE)
 
 add_project_dependency(sot-tools REQUIRED)
 
-if(BUILD_TESTING)
-  find_package(Boost REQUIRED COMPONENTS unit_test_framework)
-  add_project_dependency(example-robot-data 3.8.0 REQUIRED)
-endif(BUILD_TESTING)
-
 if(Boost_VERSION GREATER 107299)
   # Silence a warning about a deprecated use of boost bind by boost python at
   # least fo boost 1.73 to 1.75
@@ -82,6 +77,3 @@ if(NOT INSTALL_PYTHON_INTERFACE_ONLY)
 endif(NOT INSTALL_PYTHON_INTERFACE_ONLY)
 
 add_subdirectory(src)
-if(BUILD_TESTING)
-  add_subdirectory(tests)
-endif(BUILD_TESTING)
