@@ -1,4 +1,4 @@
-From 6f8b79bdf799a3fb39999a7b60dd5b9ab33a93bf Mon Sep 17 00:00:00 2001
+From 0c035cb14ef92c77eddba8ea4704d1cea91940bf Mon Sep 17 00:00:00 2001
 From: Guilhem Saurel <guilhem.saurel@laas.fr>
 Date: Fri, 12 Mar 2021 15:07:18 +0100
 Subject: [PATCH] remove BUILD_TESTING conditions
@@ -31,5 +31,5 @@ index cd0c0dd..280920a 100644
 -    ADD_SUBDIRECTORY(tests)
 -ENDIF(BUILD_TESTING)
 -- 
-2.30.2
+2.25.1
 
