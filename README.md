@@ -1,3 +1,26 @@
+## sot-dynamic-pinocchio (noetic) - 3.6.5-1
+
+The packages in the `sot-dynamic-pinocchio` repository were released into the `noetic` distro by running `/usr/bin/bloom-release sot-dynamic-pinocchio --rosdistro noetic` on `Wed, 07 Sep 2022 13:26:07 -0000`
+
+The `sot-dynamic-pinocchio` package was released.
+
+Version of package(s) in repository `sot-dynamic-pinocchio`:
+
+- upstream repository: https://github.com/stack-of-tasks/sot-dynamic-pinocchio.git
+- release repository: https://github.com/stack-of-tasks/sot-dynamic-pinocchio-ros-release.git
+- rosdistro version: `3.6.3-1`
+- old version: `3.6.3-1`
+- new version: `3.6.5-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## sot-dynamic-pinocchio (melodic) - 3.6.5-1
 
 The packages in the `sot-dynamic-pinocchio` repository were released into the `melodic` distro by running `/usr/bin/bloom-release sot-dynamic-pinocchio --rosdistro melodic` on `Wed, 07 Sep 2022 13:24:09 -0000`
