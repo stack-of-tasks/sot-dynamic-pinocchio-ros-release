@@ -1,0 +1,35 @@
+From c849e6de7ff9e302d1aab3dc85d26abbbfd95c02 Mon Sep 17 00:00:00 2001
+From: Guilhem Saurel <guilhem.saurel@laas.fr>
+Date: Wed, 7 Sep 2022 15:25:31 +0200
+Subject: [PATCH 1/2] update patch
+
+---
+ CMakeLists.txt | 8 --------
+ 1 file changed, 8 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 9d605da..8ea9615 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -38,11 +38,6 @@ endif(BUILD_PYTHON_INTERFACE)
+ 
+ add_project_dependency(sot-tools REQUIRED)
+ 
+-if(BUILD_TESTING)
+-  find_package(Boost REQUIRED COMPONENTS unit_test_framework)
+-  add_project_dependency(example-robot-data 3.8.0 REQUIRED)
+-endif(BUILD_TESTING)
+-
+ if(Boost_VERSION GREATER 107299)
+   # Silence a warning about a deprecated use of boost bind by boost python at
+   # least fo boost 1.73 to 1.75
+@@ -82,6 +77,3 @@ if(NOT INSTALL_PYTHON_INTERFACE_ONLY)
+ endif(NOT INSTALL_PYTHON_INTERFACE_ONLY)
+ 
+ add_subdirectory(src)
+-if(BUILD_TESTING)
+-  add_subdirectory(tests)
+-endif(BUILD_TESTING)
+-- 
+2.25.1
+
